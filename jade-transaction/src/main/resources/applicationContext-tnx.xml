@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:util="http://www.springframework.org/schema/util" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-2.5.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+	
+	<aop:aspectj-autoproxy/>
+	<bean class="net.paoding.rose.jade.tnx.aspect.MultiSourceXnTransactionalAspect" lazy-init="false"/>
+	<bean class="net.paoding.rose.jade.tnx.adapter.TnxDataAccessFactory" lazy-init="false">
+		<property name="dataSourceFactory" ref="tnxDataSourceFactory"/>
+	</bean>
+	<bean id="tnxDataSourceFactory" class="net.paoding.rose.jade.tnx.adapter.TnxDataSourceFactory" />
+</beans>

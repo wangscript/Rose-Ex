@@ -1,0 +1,78 @@
+﻿
+html,
+body {
+
+}
+
+i_prefer_body{
+font-family: "Microsoft Yahei","微软雅黑","黑体","Helvetica","sans-serif";
+}
+
+
+.wrap {
+padding-left: 15px !important;
+padding-right: 15px !important;
+padding-top: 10px !important;
+padding-bottom: 20px !important;
+}
+
+input.input-small{
+height: 17px;
+}
+
+button.btn-small-append{
+height: 27px;
+}
+
+.input-pend-blank{
+margin-bottom: 0;
+}
+
+.console-topbar{
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 10px;
+padding-bottom: 9px;
+background-color: #F3F3F3;
+-webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.42);
+-moz-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.42);
+box-shadow: 0 0px 6px rgba(0, 0, 0, 0.42);
+}
+
+.table-icon{
+	width:20px;
+	height:20px;
+}
+
+.table-snapshot{
+margin: 5px;
+width:160px;
+height:240px;
+-webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.44);
+-moz-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.44);
+box-shadow: 0 0px 6px rgba(0, 0, 0, 0.44);
+}
+
+.alert-audit{
+color: #000000 !important;
+background-color: #F4FBFF !important;
+border-color: #B6DCF0 !important;
+}
+
+tbody th{
+text-align: right !important;
+}
+
+td input{
+	margin-bottom: 0px !important;
+}
+
+.table.table-no-line th, .table.table-no-line td {
+border-top: 0px;
+}
+
+
+.popover {
+	max-width: none;
+}
+
